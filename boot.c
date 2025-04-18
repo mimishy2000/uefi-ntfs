@@ -241,8 +241,8 @@ EFI_STATUS EFIAPI efi_main(EFI_HANDLE BaseImageHandle, EFI_SYSTEM_TABLE *SystemT
 	CONST CHAR8 FsMagic[2][8] = {
 		{ 'N', 'T', 'F', 'S', ' ', ' ', ' ', ' '} ,
 		{ 'E', 'X', 'F', 'A', 'T', ' ', ' ', ' '} };
-	CONST CHAR16* FsName[] = { L"NTFS", L"exFAT" };
-	CONST CHAR16* DriverName[] = { L"ntfs", L"exfat" };
+	CONST CHAR16* FsName[] = { L"NTFS" };
+	CONST CHAR16* DriverName[] = { L"ntfs" };
 	CHAR16 DriverPath[64], LoaderPath[64];
 	CHAR16* DevicePathString;
 	EFI_LOADED_IMAGE_PROTOCOL *LoadedImage;
