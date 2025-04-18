@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        arch: [x64, ia32, aa64, arm64]
+        arch: [x64, ia32, aa64]
 
     steps:
     - name: Check out repository and submodules
